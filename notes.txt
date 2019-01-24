@@ -1,0 +1,13 @@
+Language Flash Cards 1.0
+Meant to help memorize words in other languages
+
+Ex: (file eng-esp.py)
+empezar - to start
+entender - to understand
+comprender - to comprehend
+abrir - to open
+
+imports the word list from the file
+randomly picks a word or translation
+you must pick the correct corresponding translation
+program tracks your streak
