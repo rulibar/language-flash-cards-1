@@ -14,4 +14,5 @@ streak = 0
 
 print("Welcome to lang Flash Cards")
 print("Translate the words between " + lang1 + " and " + lang2)
-#while True:
+
+#while True:    
