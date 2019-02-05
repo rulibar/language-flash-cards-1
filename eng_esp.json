@@ -122,5 +122,13 @@
     "acerca":["about"],
     "cerca":["near", "close"],
     "gente":["people"],
-    "ver":["to see"]
+    "ver":["to see"],
+    "perezoso":["lazy"],
+    "gorra":["cap"],
+    "blusa":["blouse"],
+    "tan":["so"],
+    "chaqueta":["jacket"],
+    "cómodo":["comfortable"],
+    "delgado":["thin"],
+    "gordo":["fat", "thick"]
 }

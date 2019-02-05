@@ -31,7 +31,7 @@ print("Translate the words between {} and {}.".format(lang2, lang1))
 
 while True:
     key = random.choice(keys)
-    attempt = input(key + " - ")
+    attempt = input(key + " - ").lower()
     answer = key.capitalize() + ": "
     for item in words[key]: answer += item + ", "
     answer = answer[:-2]
