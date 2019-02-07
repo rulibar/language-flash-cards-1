@@ -130,5 +130,12 @@
     "chaqueta":["jacket"],
     "cómodo":["comfortable"],
     "delgado":["thin"],
-    "gordo":["fat", "thick"]
+    "gordo":["fat", "thick"],
+    "ellos nos escuchan":["they listen to us"],
+    "ellas nos escuchan":["they listen to us"],
+    "ellos me llaman":["they call me"],
+    "ellas me llaman":["they call me"],
+    "te llamamos":["we call you"],
+    "me ayudas":["you help me"],
+    "siempre te necesito":["i always need you"]
 }
