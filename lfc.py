@@ -11,6 +11,8 @@ keys = list(word_list.keys())
 lang1 = keys[0].capitalize()
 lang2 = word_list[keys[0]].capitalize()
 del word_list[keys[0]]; del keys[0]
+correct = 0
+incorrect = 0
 streak = 0
 
 words = dict()
@@ -35,9 +37,17 @@ while True:
     answer = key.capitalize() + ": "
     for item in words[key]: answer += item + ", "
     answer = answer[:-2]
+    if attempt == "exit()":
+        total = correct + incorrect
+        if total != 0:
+            rate = round(100 * correct / total, 2)
+            print("Total translations: " + str(total))
+            print("Success rate: {}%".format(str(rate)))
+        print("Exiting Language Flash Cards...")
+        exit()
     if attempt in words[key]:
-        streak += 1
+        streak += 1; correct += 1
         print('Correct. {}. Streak: {}'.format(answer, streak))
     else:
-        streak = 0
+        streak = 0; incorrect += 1
         print('Incorrect. {}.'.format(answer))
