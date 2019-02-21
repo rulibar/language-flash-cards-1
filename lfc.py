@@ -3,7 +3,7 @@ import json
 import random
 
 # vars
-file = 'eng_esp.json'
+file = 'eng_esp2.json'
 
 # compile words list
 word_list = json.loads(open(file).read())
