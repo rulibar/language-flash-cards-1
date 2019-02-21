@@ -32,13 +32,14 @@ print("Welcome to Language Flash Cards.")
 print("Translate the words between {} and {}.".format(lang2, lang1))
 
 while True:
+    total = correct + incorrect + 1
     key = random.choice(keys)
     attempt = input(key + " - ").lower()
     answer = key.capitalize() + ": "
     for item in words[key]: answer += item + ", "
     answer = answer[:-2]
     if attempt == "exit()":
-        total = correct + incorrect
+        total -= 1
         if total != 0:
             rate = round(100 * correct / total, 2)
             print("Total translations: " + str(total))
@@ -47,7 +48,9 @@ while True:
         exit()
     if attempt in words[key]:
         streak += 1; correct += 1
-        print('Correct. {}. Streak: {}'.format(answer, streak))
+        print('Correct. Total translations: {}. Streak: {}'.format(total, streak))
+        print('{}.'.format(answer))
     else:
         streak = 0; incorrect += 1
-        print('Incorrect. {}.'.format(answer))
+        print('Incorrect. Total translations: {}.'.format(total))
+        print('{}.'.format(answer))
